@@ -2,12 +2,13 @@ import React from 'react';
 
 class GoogleAuth extends React.Component {
   state = { isSignedIn: null };
+
   componentDidMount() {
     window.gapi.load('client:auth2', () => {
       window.gapi.client
         .init({
           clientId:
-            '579060293924-47htsgbc6dodqvcfe6i0mbgdvejf0547.apps.googleusercontent.com',
+            '797401886567-9cumct9mrt3v2va409rasa7fa6fq02hh.apps.googleusercontent.com',
           scope: 'email',
         })
         .then(() => {
@@ -37,14 +38,14 @@ class GoogleAuth extends React.Component {
       return (
         <button onClick={this.onSignOutClick} className="ui red google button">
           <i className="google icon" />
-          Sigh Out
+          Sign Out
         </button>
       );
     } else {
       return (
         <button onClick={this.onSignInClick} className="ui red google button">
           <i className="google icon" />
-          Sigh In
+          Sign In with Google
         </button>
       );
     }
