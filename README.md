@@ -1,7 +1,5 @@
 # "Video streams application"
 
-React/Redux CRUD application with implemented video streaming
-
 ## Functionality:
 
 - Form with basic CRUD operation
